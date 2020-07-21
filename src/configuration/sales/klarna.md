@@ -24,12 +24,12 @@ Stores > Settings > [Configuration]({% link stores/configuration.md %}) > [Sale
 
 |Field|[Scope]({% link configuration/scope.md %})|Description|
 |--- |--- |--- |
-|Enable|Website|Enables Klarna for the current Website. Options: Yes / No|
-|Allowed Countries|Website|Determines the countries where Klarna is available for this Website. Options: All Allowed Countries / Specific Countries|
-|Enable B2B|Website|Allows B2B payments, if previously set up in your Klarna account. Options: Yes / No|
-|Enable Data sharing|Website|Determines if customer data is shared with Klarna before the customer places an order. Sharing data allows Klarna to personalize credit offerings for the customer. Options: Yes / No|
-|Enable Data sharing on load|Website|Allows you to determine when customer data is shared with Klarna. Options:<br />**No** - Customer billing and shipping address information is shared with Klarna after the transaction is authorized. If a shipping address error is encountered during authorization, the customer is instructed to return to the previous step and correct the problem.<br />**Yes** - Customer billing and shipping address information is shared with Klarna when the payment method is selected during the checkout process.|
-|Sort Order|Website|A number that determines the sequence in which Klarna appears with other payment methods during checkout. If left blank, Klarna appears next in the list of active payment methods.|
+|Enable|Store View|Enables Klarna for the current store view. Options: Yes / No|
+|Allowed Countries|Store View|Determines the countries where Klarna is available for this store view. Options: All Allowed Countries / Specific Countries|
+|Enable B2B|Store View|Allows B2B payments, if previously set up in your Klarna account. Options: Yes / No|
+|Enable Data sharing|Store View|Determines if customer data is shared with Klarna before the customer places an order. Sharing data allows Klarna to personalize credit offerings for the customer. Options: Yes / No|
+|Enable Data sharing on load|Store View|Allows you to determine when customer data is shared with Klarna. Options:<br />**No** - Customer billing and shipping address information is shared with Klarna after the transaction is authorized. If a shipping address error is encountered during authorization, the customer is instructed to return to the previous step and correct the problem.<br />**Yes** - Customer billing and shipping address information is shared with Klarna when the payment method is selected during the checkout process.|
+|Sort Order|Store View|A number that determines the sequence in which Klarna appears with other payment methods during checkout. If left blank, Klarna appears next in the list of active payment methods.|
 
 ## Design
 
@@ -38,21 +38,23 @@ Stores > Settings > [Configuration]({% link stores/configuration.md %}) > [Sale
 
 |Field|[Scope]({% link configuration/scope.md %})|Description|
 |--- |--- |--- |
-|Details color|Website|The [hexadecimal code](https://www.w3schools.com/colors/colors_picker.asp) for the background color of details that appear on the Klarna page during checkout. For example: #0072CC|
-|Border color|Website|The hexadecimal code for the color of borders on the Klarna page during checkout. For example: #0072CC|
-|Selected border color|Website|The hexadecimal code for the color of borders around the active section on the Klarna page during checkout. For example: #0072CC|
-|Text color|Website|The hexadecimal code for the color of the main text on the Klarna page during checkout. For example: #0072CC|
-|Border Radius|Website|The number of pixels that define the size of the curve at each corner of a box with borders. For example: 46px|
-
+|Details color|Store View|The [hexadecimal code](https://www.w3schools.com/colors/colors_picker.asp) for the background color of details that appear on the Klarna page during checkout. For example: #0072CC|
+|Border color|Store View|The hexadecimal code for the color of borders on the Klarna page during checkout. For example: #0072CC|
+|Selected border color|Store View|The hexadecimal code for the color of borders around the active section on the Klarna page during checkout. For example: #0072CC|
+|Text color|Store View|The hexadecimal code for the color of the main text on the Klarna page during checkout. For example: #0072CC|
+|Border Radius|Store View|The number of pixels that define the size of the curve at each corner of a box with borders. For example: 46px|
 
 ## Klarna On-Site Messaging
 
+![]({% link images/images/config-sales-payment-methods-klarna-payments-on-site-messaging.png %}){: .zoom}
+[_On-Site Messaging_]({% link payment/klarna-setup.md %})
+
 |Field|[Scope]({% link configuration/scope.md %})|Description|
 |--- |--- |--- |
-|Enable|Website|Enable On-Site Messaging. Options: Yes / No|
-|Data client ID|Website|The data client id obtained from the Klarna merchant portal.|
-|Design Theme|Website|The desired design theme. Options: default / dark|
-|Enable on product|Website|Enable OSM on product page. Options Yes / No|
-|Product placement|Website|Select the type of placement for product page|
-|Enable on cart|Website|Enable OSM on cart page. Options Yes / No|
-|Cart placement|Website|Select the type of placement for cart page|
+|Enable|Website|Allows On-Site Messaging (OSM) if enabled in your Klarna account. Options: Yes / No|
+|Data client ID|Website|The `data-client-id` obtained from the Klarna merchant portal.|
+|Design Theme|Website|Determines the style of Klarna promotional messaging in the storefront. Options: default / dark|
+|Enable on product|Website|Enables OSM on the product page. Options Yes / No|
+|Product placement|Website|Determines where Klarna promotional messaging appears on the product page. <br >Options:<br />Credit Promotion - Standard<br />Credit Promotion - Small<br />Credit Promotion - Badge<br />Sidebar Promotion - Autosize<br />Top Strip Promotion - Standard<br />Homepage Promotion - Tall<br />Homepage Promotion - Box<br />Homepage Promotion - Wide<br />Other|
+|Enable on cart|Website|Enables OSM on the cart page. Options: Yes / No|
+|Cart placement|Website|Determines where Klarna promotional messaging appears on the cart page. <br />Options: <br />Credit Promotion - Standard<br />Credit Promotion - Small<br />Credit Promotion - Badge<br />Sidebar Promotion - Autosize<br />Top Strip Promotion - Standard<br />Homepage Promotion - Tall<br />Homepage Promotion - Box<br />Homepage Promotion - Wide<br />Other||
