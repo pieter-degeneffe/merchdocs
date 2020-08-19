@@ -1,1 +1,1 @@
-Please do not remove. I need this branch for the PM to meet with Google. Will remove when PM approves.
+Please do not remove this branch. It is needed for the PM to meet with Google. Will remove this branch when PM approves.
